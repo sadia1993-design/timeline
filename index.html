@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline</title>
+    <style>
+        *{margin: 0; padding: 0; box-sizing: border-box;}
+        section.timeline-section{margin:0 auto; max-width: 960px; width: 100%; background-color: #eee;padding: 50px 50px;
+         font-family: serif;}
+        .timeline-item:nth-child(odd) {text-align: right;padding-right: calc(50% );margin-right: 30px;}
+
+        .timeline-item:nth-child(even) {
+            padding-left: calc(50% ); margin-left: 30px;
+        }
+        .timeline-item {
+            margin-bottom: 40px;  position: relative;
+        }
+        .timeline-content{background: rgba(0,0,0,.5); padding: 30px; border-radius: 5px;}
+        .timeline-content h3 {
+            font-size: 1.7em;
+            margin-bottom: 12px;
+            color: navy;
+        }
+        .timeline-item:nth-child(even) .timeline-dot {
+            width: 15px;
+            height: 15px;
+            background: mediumaquamarine;
+            margin-left: -36px;
+            border-radius: 50%;
+            top: 1%;
+            position: absolute;
+        }
+        .timeline-item:nth-child(odd) .timeline-dot {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: maroon;
+            left: calc(50%);
+            position: absolute;
+            margin-left: 9px;
+        }
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+        .timeline-items {
+            position: relative;
+        }
+
+        .timeline-items:before {content: '';position: absolute;width: 2px;height: 100%;background: navy;top: 0;left: calc(50%);}
+        .timeline-content p {text-align: justify;color: #fff;}
+        .timeline-date {
+                font-weight: bold;
+                color: navy;
+                text-align: left;
+                font-size: 21px;
+            }
+
+        /*responsive*/
+        @media (max-width:767px){
+            .timeline-item:nth-child(odd) {
+                padding-right: 0;
+                margin-right: 0;
+                margin-left: 15px;
+                
+            }
+            .timeline-content h3{text-align: left; color: rgb(15, 14, 14); font-size: 22px; font-family: serif;}
+            .timeline-item:nth-child(even) {
+                padding-left: 0;
+                margin-left: 15px;
+               
+            }
+            .timeline-items:before{left: 0;}
+            .timeline-item:nth-child(odd) .timeline-dot {
+                left: 0;
+                margin-left: -20px;
+            }
+            .timeline-item:nth-child(even) .timeline-dot {
+                margin-left: -20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="timeline-section">
+        <div class="timeline-items">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2012</div>
+                <div class="timeline-content">
+                    <h3>Timeline with title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, architecto rerum, error dolor laboriosam deserunt nostrum doloremque eius ducimus accusamus asperiores quidem aperiam non voluptatibus recusandae dolore cumque a labore quia cupiditate? </p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2014</div>
+                <div class="timeline-content">
+                    <h3>Timeline with title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, architecto rerum, error dolor laboriosam deserunt nostrum doloremque eius ducimus accusamus asperiores quidem aperiam non voluptatibus recusandae dolore cumque a labore quia cupiditate? </p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2015</div>
+                <div class="timeline-content">
+                    <h3>Timeline with title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, architecto rerum, error dolor laboriosam deserunt nostrum doloremque eius ducimus accusamus asperiores quidem aperiam non voluptatibus recusandae dolore cumque a labore quia cupiditate? </p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2016</div>
+                <div class="timeline-content">
+                    <h3>Timeline with title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, architecto rerum, error dolor laboriosam deserunt nostrum doloremque eius ducimus accusamus asperiores quidem aperiam non voluptatibus recusandae dolore cumque a labore quia cupiditate? </p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2017</div>
+                <div class="timeline-content">
+                    <h3>Timeline with title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, architecto rerum, error dolor laboriosam deserunt nostrum doloremque eius ducimus accusamus asperiores quidem aperiam non voluptatibus recusandae dolore cumque a labore quia cupiditate?</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2018</div>
+                <div class="timeline-content">
+                    <h3>Timeline with title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, architecto rerum, error dolor laboriosam deserunt nostrum doloremque eius ducimus accusamus asperiores quidem aperiam non voluptatibus recusandae dolore cumque a labore quia cupiditate?</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2019</div>
+                <div class="timeline-content">
+                    <h3>Timeline with title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, architecto rerum, error dolor laboriosam deserunt nostrum doloremque eius ducimus accusamus asperiores quidem aperiam non voluptatibus recusandae dolore cumque a labore quia cupiditate? </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
